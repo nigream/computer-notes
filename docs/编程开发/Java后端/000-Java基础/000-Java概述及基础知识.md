@@ -72,5 +72,3 @@ PB、EB、ZB、YB、BB、NB、DB
 | 退出到磁盘根目录 |    ``cd \``     |
 |       清屏       |     ``cls``     |
 
-![](./lifecycle.png)
-
