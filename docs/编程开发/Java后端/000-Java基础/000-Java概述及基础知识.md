@@ -1,4 +1,4 @@
-## **一、Java**概述
+## 一、Java概述
 
 ### **1.1** 什么是**Java**语言
 
@@ -72,9 +72,5 @@ PB、EB、ZB、YB、BB、NB、DB
 | 退出到磁盘根目录 |    ``cd \``     |
 |       清屏       |     ``cls``     |
 
-```java
-public void main(String[] args) {
-    int a = 2;
-}
-```
+![](./lifecycle.png)
 
