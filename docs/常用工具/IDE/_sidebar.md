@@ -1,2 +1,2 @@
 - <font style="font-weight:bold;font-size:17px;">IDE</font>
-  - [IDEA](编程开发/常用工具/IDE/IDEA)
+- [IDEA](编程开发/常用工具/IDE/IDEA)

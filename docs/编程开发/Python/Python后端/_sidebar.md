@@ -1,2 +1,2 @@
 - <font style="font-weight:bold;font-size:17px;">Python后端</font>
-  - [Django](/编程开发/Python/Python后端/Django)
+- [Django](编程开发/Python/Python后端/Django)
