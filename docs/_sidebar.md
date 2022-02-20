@@ -12,6 +12,7 @@
       * Redis
       * Jenkins
     * 项目实战
+    * 面试题
   - 前端
     - 前端核心技术
     - 服务器&工程化
@@ -31,8 +32,8 @@
   - [IDE](常用工具/IDE/)
 - <font style="font-weight:bold;font-size:17px;">数据库</font>
   - MySQL
-- <font style="font-weight:bold;font-size:17px;">职业规划</font>
-- <font style="font-weight:bold;font-size:17px;">面试</font>
+- <font style="font-weight:bold;font-size:17px;">工作经验</font>
+  - [新人入职](工作经验/新人入职)
 - <font style="font-weight:bold;font-size:17px;">测试</font>
 - <font style="font-weight:bold;font-size:17px;">运维</font>
   - linux
@@ -53,5 +54,5 @@
 - <font style="font-weight:bold;font-size:17px;">物理硬件</font>
   - 数字电路
 - <font style="font-weight:bold;font-size:17px;">电子产品</font>
-  - 树莓派
+  - [树莓派](电子产品/树莓派/)
 
