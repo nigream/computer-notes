@@ -28,12 +28,19 @@
     * [Python后端](编程开发/Python/Python后端/)
   - [移动APP](编程开发/移动APP/)
     * [Android](编程开发/移动APP/Android/)
+  - 代码规范
+    - 阿里巴巴Java开发手册
+    - 代码简洁之道
 - <font style="font-weight:bold;font-size:17px;">常用工具</font>
-  - [版本控制](常用工具/版本控制/)
-  - 测试
+  - [<font style="font-weight:bold;font-size:15px;">版本控制</font>](常用工具/版本控制/)
+    - [Git](常用工具/版本控制/Git)
+  - [<font style="font-weight:bold;font-size:15px;">URL工具</font>](常用工具/URL工具/)
     - Postman
     - SoapUI
-  - [IDE](常用工具/IDE/)
+    - [curl](常用工具/URL工具/curl/)
+  - [<font style="font-weight:bold;font-size:15px;">IDE</font>](常用工具/IDE/)
+    - [IDEA](常用工具/IDE/IDEA)
+    - VSCode
 - <font style="font-weight:bold;font-size:17px;">数据库</font>
   - MySQL
 - <font style="font-weight:bold;font-size:17px;">工作经验</font>
@@ -42,11 +49,8 @@
 - <font style="font-weight:bold;font-size:17px;">运维</font>
   - linux
   - docker
-- <font style="font-weight:bold;font-size:17px;">代码规范</font>
-  - 阿里巴巴Java开发手册
-  - 代码简洁之道
 - <font style="font-weight:bold;font-size:17px;">计算机基础</font>
-  - 计算机网络
+  - [计算机网络]()
   - 数据结构
   - 操作系统
   - 计算机组成原理

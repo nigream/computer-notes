@@ -96,3 +96,11 @@
 
 其实他们的主要内容都是class文件，不同的是： War 包会被 Tomcat 识别为一个 Web 项目，从而被 Tomcat 部署；而 Jar 包不会。
 
+
+
+## Tomcat配置
+
+
+
+
+
