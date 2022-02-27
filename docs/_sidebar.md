@@ -42,6 +42,10 @@
   - [<font style="font-weight:bold;font-size:15px;">IDE</font>](常用工具/IDE/)
     - [IDEA](常用工具/IDE/IDEA)
     - VSCode
+  - [<font style="font-weight:bold;font-size:15px;">项目构建工具</font>](常用工具/项目构建工具/)
+    - [Maven](常用工具/项目构建工具/Maven/)
+    - Gradle
+    - Ant
 - <font style="font-weight:bold;font-size:17px;">数据库</font>
   - MySQL
 - <font style="font-weight:bold;font-size:17px;">工作经验</font>
@@ -51,7 +55,7 @@
   - linux
   - docker
 - <font style="font-weight:bold;font-size:17px;">计算机基础</font>
-  - [计算机网络]()
+  - [计算机网络](计算机基础/计算机网络/)
   - 数据结构
   - 操作系统
   - 计算机组成原理
