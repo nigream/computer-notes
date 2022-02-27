@@ -122,7 +122,7 @@
 
    
 
-3. 添加 `HelloService.java` 、 `HelloServiceImpl.java` 和 `Server.java` ，以及 `log4j.properties` 。
+3. 添加 `HelloService.java` 、 `HelloServiceImpl.java` 和 `Server.java` 文件，以及 `log4j.properties` 文件。
 
    ```java
    @WebService
@@ -205,5 +205,52 @@
 ### 客户端
 
 1. 使用 maven-archetype-quickstart 骨架，创建 jaxws-client的 maven 模块。
+
 2. 添加依赖 (与服务端的依赖一致) 。
-3. 
+
+3. 添加 `HelloService.java` 和 `Client.java` 文件。
+
+   ```java
+   @WebService
+   public interface HelloService {
+   	/**
+   	 * 对外发布服务的接口的方法
+   	 */
+   	String sayHello(String name);
+   
+   	String sayHello2(String name);
+   }
+   ```
+
+   ```java
+   public class Client {
+   	public static void main(String[] args) {
+   		//  服务接口访问地址：http://localhost:8000/ws/hello
+   
+   		// 创建cxf代理工厂
+   		JaxWsProxyFactoryBean factory = new JaxWsProxyFactoryBean();
+   
+   		//  设置远程访问服务端地址
+   		factory.setAddress("http://localhost:8000/ws/hello");
+   
+   		//  设置接口类型
+   		factory.setServiceClass(HelloService.class);
+   
+   		//  对接口生成代理对象
+   		HelloService helloService = factory.create(HelloService.class);
+   
+   		//  代理对象对象  class com.sun.proxy.$Proxy34       [Java代理： 1. 静态代理；  2.动态代理（jdk接口代理、cglib子类代理）]    $CGLIB123
+   		System.out.println(helloService.getClass());
+   
+   		// 远程访问服务端方法
+   		String content = helloService.sayHello("Jet");
+   		System.out.println(content);
+   	}
+   }
+   ```
+
+   
+
+   
+
+4. 保持服务端开启状态，客户端运行 `main方法` 即可成功访问服务端。
