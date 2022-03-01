@@ -47,7 +47,10 @@
     - Gradle
     - Ant
 - <font style="font-weight:bold;font-size:17px;">数据库</font>
-  - MySQL
+  - 基础知识
+  - [MySQL](数据库/MySQL/)
+  - SQL Server
+
 - <font style="font-weight:bold;font-size:17px;">工作经验</font>
   - [新人入职](工作经验/新人入职)
 - <font style="font-weight:bold;font-size:17px;">测试</font>
