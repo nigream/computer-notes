@@ -52,7 +52,7 @@
   - [新人入职](工作经验/新人入职)
 - <font style="font-weight:bold;font-size:17px;">测试</font>
 - <font style="font-weight:bold;font-size:17px;">运维</font>
-  - linux
+  - [Linux](运维/Linux/)
   - docker
 - <font style="font-weight:bold;font-size:17px;">计算机基础</font>
   - [计算机网络](计算机基础/计算机网络/)
