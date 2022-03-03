@@ -23,4 +23,7 @@ git rm -r -n --cached "*.iml"
 # 将文件移出版本控制
 git rm -r --cached  "bin/"
 git rm -r --cached  "*.iml"
+
+# 展示仓库中的所有文件
+git ls-files
 ```

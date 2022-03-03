@@ -84,3 +84,45 @@ https://blog.csdn.net/qq_39512532/article/details/117266940
 </mirrors>
 ```
 
+## 常用命令
+
+
+
+## 常见问题
+
+### pom 、jar 与 war
+
+**参考：**
+
+```crystal
+https://blog.csdn.net/xldmx/article/details/95196139
+```
+
+pom : 用于 父工程 (用于版本控制) 或 聚合工程 (即在一个模块A中依赖多个模块，则要依赖多个模块时，只需依赖这个模块A就行) 。
+
+jar : 通常用于依赖。
+
+war : Java Web 项目的打包方式 (其实与 jar 没有本质不同，打成 war 包只是为了让服务器软件能够识别这是一个 web 项目) 。
+
+### spring-boot-maven-plugin 插件爆红
+
+问题描述：新建 SpringBoot 项目时，pom 文件中 spring-boot-maven-plugin 插件爆红
+
+解决方法：添加版本号。
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>2.2.1.RELEASE</version>
+        </plugin>
+    </plugins>
+</build>
+```
+
+
+
+
+
