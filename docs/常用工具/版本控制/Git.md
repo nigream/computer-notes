@@ -10,12 +10,6 @@
 # 初始化git
 git init
 
-# 设置远程分支
-git remote add origin https://github.com/nigream/learning-notes.git
-
-# 刷新分支
-git remote update origin --prune
-
 # 展示要删除的文件预览
 git rm -r -n --cached "bin/"
 git rm -r -n --cached "*.iml"
@@ -31,6 +25,19 @@ git ls-files
 git branch -d xxx
 # 删除分支（不带警告，强行删除）
 git branch -D xxx
+```
+
+### 远程分支相关
+
+```sh
+# 设置远程分支
+git remote add origin https://github.com/nigream/learning-notes.git
+
+# 刷新分支
+git remote update origin --prune
+
+# 获取远程分支 xxx
+git fetch origin xxx
 ```
 
 
