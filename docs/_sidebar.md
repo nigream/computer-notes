@@ -1,6 +1,6 @@
 - <font style="font-weight:bold;font-size:17px;">编程开发</font>
   - [Java后端](编程开发/Java后端/)
-    * [Java基础](编程开发/Java后端/000-Java基础/)
+    * [Java基础](编程开发/Java后端/Java基础/)
     * [Java进阶](编程开发/Java后端/001-Java进阶/)
     * [Java高级](编程开发/Java后端/002-Java高级/)
     * 数据库技术
@@ -58,12 +58,13 @@
 - <font style="font-weight:bold;font-size:17px;">测试</font>
 - <font style="font-weight:bold;font-size:17px;">运维</font>
   - [Linux](运维/Linux/)
+  - [Windows](运维/Windows/)
   - docker
 - <font style="font-weight:bold;font-size:17px;">计算机基础</font>
   - [计算机网络](计算机基础/计算机网络/)
   - 数据结构
   - 操作系统
-  - 计算机组成原理
+  - [计算机组成原理](计算机基础/计算机组成原理/)
 - <font style="font-weight:bold;font-size:17px;">设计与架构</font>
   - 设计模式
 - <font style="font-weight:bold;font-size:17px;">软件工程</font>
