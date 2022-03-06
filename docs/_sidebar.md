@@ -11,7 +11,8 @@
       * [Tomcat](编程开发/Java后端/JavaWeb/Tomcat/)
       * [WebService](编程开发/Java后端/JavaWeb/WebService/)
     * [常用框架与技术](编程开发/Java后端/常用框架与技术/)
-      * SSM框架
+      * [MyBatis](编程开发/Java后端/常用框架与技术/MyBatis/)
+      * Spring
       * [MyBatisPlus](编程开发/Java后端/常用框架与技术/MyBatisPlus/)
       * [SpringBoot](编程开发/Java后端/常用框架与技术/SpringBoot/)
       * 微服务
@@ -54,7 +55,6 @@
 - <font style="font-weight:bold;font-size:17px;">经验总结</font>
   - [工作经验](经验总结/工作经验/)
   - [开发经验](经验总结/开发经验/)
-
 - <font style="font-weight:bold;font-size:17px;">测试</font>
 - <font style="font-weight:bold;font-size:17px;">运维</font>
   - [Linux](运维/Linux/)
@@ -66,7 +66,9 @@
   - 操作系统
   - [计算机组成原理](计算机基础/计算机组成原理/)
 - <font style="font-weight:bold;font-size:17px;">设计与架构</font>
-  - 设计模式
+  - [软件架构](设计与架构/软件架构/)
+  - [设计模式](设计与架构/设计模式/)
+
 - <font style="font-weight:bold;font-size:17px;">软件工程</font>
   - 需求分析与设计
   - 项目管理
