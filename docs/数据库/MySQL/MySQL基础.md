@@ -303,14 +303,113 @@ firewall-cmd --list-ports
 
 ### 使用压缩包
 
+参考：
+
+```wiki
+1. https://www.cnblogs.com/heaven21cn/p/15924238.html
+2. https://blog.csdn.net/weixin_32612253/article/details/113713953
+3. https://zhuanlan.zhihu.com/p/73402380
+```
+
 下载地址：https://dev.mysql.com/downloads/mysql/
 
 1. 解压压缩包 `mysql-8.0.28-winx64.zip` 。
-2. 
+
+2. 在mysql解压的根目录，新建 `my.ini` 文件，文件中写入如下内容：
+
+   ```sh
+   [mysqld]
+   
+   # 设置端口
+   port = 3306
+   
+   # 设置mysql的安装目录
+   basedir = E:\devtools\db\mysql-8.0.28
+   
+   # 设置mysql 数据库的数据的存放目录(为了保证数据的安全，我放在C盘)
+   datadir = C:\dbdata\mysql-8.0.28
+   
+   # 允许最大连接数
+   max_connections = 200
+   
+   # 允许连接失败的次数
+   max_connect_errors = 10
+   
+   # 服务端使用的默认字符集
+   # MySQL 的 utf8 实际上不是真正的 UTF-8, utf8只 支持每个字符最多三个字节，而真正的UTF-8是每个字符最多四个字节。
+   # MySQL 一直没有修复这个bug，他们在2010年发布了一个叫作 utf8mb4 的字符集，绕过了这个问题。
+   character-set-server = utf8mb4
+   
+   # 创建新表时将使用的默认引擎
+   default-storage-engine = INNODB
+   
+   # 默认的认证插件
+   authentication_policy = mysql_native_password
+   
+   # 
+   explicit_defaults_for_timestamp = 1
+   
+   
+   
+   [mysql]
+   
+   # 客户端默认字符集
+   default-character-set = utf8mb4
+   
+   
+   
+   [client]
+   
+   # 客户端连接服务端时默认使用的端口
+   port = 3306
+   
+   default-character-set = utf8mb4
+   ```
+
+   
+
+3. 使用管理模式进入执行 cmd ，进入 `bin` 目录执行 `mysqld --initialize-insecure --user=mysql` 。等待一会儿后，执行完成，命令行中没有提示。
+
+4. 执行 `mysqld install` 提示 `Service successfully installed.` 。
+
+5. 执行 `net start mysql` 启动服务。
+
+6. 执行 `mysql -uroot -p` 登录 MySQL ，提示输入密码时，可以直接回车。
+
+7. 先执行 `exit` 退出 MySQL 客户端，执行 `mysqladmin -u root -p password` 修改密码，第一次让你输入现在的密码，可以直接回车；第二、第三次才是让你输入新密码。
+
+   ```sh
+   E:\devtools\db\mysql-8.0.28\bin>mysqladmin -u root -p password
+   Enter password:
+   New password: ****
+   Confirm new password: ****
+   Warning: Since password will be sent to server in plain text, use ssl connection to ensure password safety.
+   ```
+
+8. 关闭 MySQL 开机自启动：命令行中执行 `services.msc` ，搜索 `MYSQL` ，将 **启动类型** 设置为 **手动** 。
 
 ### 使用 msi (Microsoft Installer)
 
 下载地址：https://dev.mysql.com/downloads/windows/installer/8.0.html
+
+## 在 Windows 中完全卸载 MySQL
+
+参考：
+
+```wiki
+1. https://blog.csdn.net/qq_41140741/article/details/81489531
+```
+
+1. 关闭 `MySQL 服务`。
+2. 以管理员方式进入 `MySQL` 的 `bin` 目录，执行 `mysqld remove` 。
+3. 快捷键 `win+r` 输入 `regedit` 进入注册表。
+4. 删除 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Eventlog\Application\MySQL` 文件夹。
+5. 删除 `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\Eventlog\Application\MySQL` 文件夹 和 `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL` 文件夹（若这两个都不存在，则不用删除）。
+6. 删除 `MySQL 的 安装目录` 。
+7. 删除 `C:\Program Files (x86)\MySQL` 目录。
+8. 删除 `C:\ProgramData\MySQL` 目录。
+
+
 
 ## 常用命令
 

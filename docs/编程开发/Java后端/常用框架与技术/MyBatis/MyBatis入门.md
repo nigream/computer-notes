@@ -92,3 +92,101 @@ public static void main(String[] args) {
 **Object Relational Mappging 对象关系映射**
 
 简单地说，就是把 **数据库表** 和 **实体类及实体类的属性** 对应起来，让我们可以操作实体类就实现操作数据库表。
+
+## 入门案例
+
+### 环境准备
+
+#### 创建maven工程并导入坐标	
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.mybatis</groupId>
+        <artifactId>mybatis</artifactId>
+        <version>3.5.9</version>
+    </dependency>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.25</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.17.2</version>
+    </dependency>
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.13.2</version>
+    </dependency>
+</dependencies>
+```
+
+#### 创建实体类和dao的接口
+
+实体类 `com.itheima.domain.User` 省略
+
+```java
+package com.itheima.dao;
+public interface IUserDao {
+    List<User> findAll();
+}
+```
+
+#### 创建Mybatis的主配置文件
+
+`SqlMapConifg.xml`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- mybatis的主配置文件 -->
+<configuration>
+    <!-- 配置环境 -->
+    <environments default="mysql">
+        <!-- 配置mysql的环境-->
+        <environment id="mysql">
+            <!-- 配置事务的类型-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置数据源（连接池） -->
+            <dataSource type="POOLED">
+                <!-- 配置连接数据库的4个基本信息 -->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/eesy_mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="1234"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件 -->
+    <mappers>
+        <mapper resource="com/itheima/dao/IUserDao.xml"/>
+    </mappers>
+</configuration>
+```
+
+#### 创建映射配置文件
+
+`IUserDao.xml`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.IUserDao">
+    <!--配置查询所有-->
+    <select id="findAll" resultType="com.itheima.domain.User">
+        select * from user
+    </select>
+</mapper>
+```
+
+- 映射配置文件位置必须和 **dao接口** 的 **包结构** 相同。
+- 映射配置文件的 mapper 标签 **namespace 属性** 的取值必须是 **dao接口** 的 **全限定类名** 。
+- 映射配置文件的 **操作配置（如select）** ，**id** 属性的取值必须是 **dao接口** 的 **方法名** 。
