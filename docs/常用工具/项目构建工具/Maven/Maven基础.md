@@ -122,7 +122,12 @@ war : Java Web 项目的打包方式 (其实与 jar 没有本质不同，打成 
 </build>
 ```
 
+### uber-jar
 
+参考：https://www.cnblogs.com/hzhuxin/p/7044334.html
+
+- 在很多编程语言中会把 `super` 写为 `uber` （因为 `super` 可能是关键字）， 这是上世纪80年代开始流行的，比如管 superman 叫 uberman 。
+- 所以 `uber-jar` 从字面上理解就是 `super-jar` ，这样的 jar 不但包含自己代码中的 class ，也会包含一些 第三方依赖的 jar ，也就是把自身的代码和其依赖的 jar 全打包在一个 jar 里面了，所以就很形象的称其为super-jar 。
 
 
 
