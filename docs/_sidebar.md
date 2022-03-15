@@ -61,8 +61,9 @@
 - <font style="font-weight:bold;font-size:17px;">测试</font>
 - <font style="font-weight:bold;font-size:17px;">运维</font>
   - [Linux](运维/Linux/)
+  - [VMware](运维/VMware/)
   - [Windows](运维/Windows/)
-  - docker
+  - [Docker](运维/Docker/)
 - <font style="font-weight:bold;font-size:17px;">计算机基础</font>
   - [计算机网络](计算机基础/计算机网络/)
   - 数据结构
