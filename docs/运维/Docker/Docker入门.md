@@ -59,9 +59,99 @@
   - 网络：宿主机网络，NS隔离
 - 更敏捷、更灵活：
   - 分层的存储和包管理，`devops` 理念。
-  - 支持多种 **网络配置** 。、
+  - 支持多种 **网络配置** 。
 
 ### Docker 的三大要素
 
-镜像、容器、仓库。
+Docker 本身是一个 **容器运行载体** 或称之为 **管理引擎** 。
+
+#### 镜像
+
+- Docker 镜像（Image）就是一个只读的模板。
+- 镜像可以用来创建 Docker 容器，一个镜像可以创建很多容器。
+
+#### 容器
+
+- 容器是用镜像创建的运行实例。
+- 就像是Java中的类和实例对象一样，镜像是 **静态的定义** ，容器是镜像 **运行时的实体** 。
+- 容器为镜像提供了一个 **标准的和隔离的运行环境** ，它可以被启动、开始、停止、删除。
+- 容器 = 一个简易版的 Linux 环境（包括root用户权限、进程空间、用户空间和网络空间等）+ 运行在其中的 **应用程序** 。
+
+#### 仓库
+
+- 仓库（Repository）是集中 **存放镜像文件** 的场所。
+
+## Docker 架构
+
+### 整体架构
+
+- Docker 是一个 Client-Server 结构的系统。
+- Docker 客户机 对 Docker 守护进程（Docker daemon）发送命令，后者执行 **构建、运行和分发** Docker 容器的繁重工作。
+- Docker 客户机和守护进程可以在同一个系统上运行，也可以将 Docker 客户机连接到远程 Docker 守护进程。
+- Docker 客户机和守护进程使用 REST API、 UNIX 套接字 (sockets) 或网络接口进行通信。
+- 还有一个 Docker 客户机是 Docker Compose，它可以处理由 **一组容器** 组成的应用程序。
+
+![architecture](Docker入门/architecture.svg)
+
+### Docker 运行流程
+
+1. 用户是使用 Docker Client 与 Docker Daemon 建立通信，并发送请求给后者。
+2. Docker Daemon 作为 Docker 架构中的主体部分，首先提供 Docker Server 的功能使其可以接受 Docker Client 的请求。
+3. Docker Engine 执行 Docker 内部的一系列工作，每一项工作都是以一个 Job 的形式的存在。
+4. Job 的运行过程中，当需要容器镜像时，则从 Docker Registry 中下载镜像，并通过镜像管理驱动 Graph Driver 将下载镜像以 Graph 的形式存储。
+5. 当需要为 Docker 创建网络环境时，通过网络管理驱动 Network Driver 创建并配置 Docker 容器网络环境。
+6. 当需要限制 Docker 容器运行资源或执行用户指令等操作时，则通过 Exec Driver 来完成。
+7. Libcontainer 是一个 **独立的容器管理包** ，Network Driver 以及 Exec driver 都是通过 Libcontainer 来实现具体对容器进行的操作。
+
+![image-20220317015245683](Docker入门/image-20220317015245683.png)
+
+## 安装Docker
+
+### 说明
+
+Docker 官网：http://www.docker.com
+
+- Docker 并非是一个通用的容器工具，它依赖于已存在并运行的 **Linux内核环境** 。
+- Docker 实质上是在已经运行的 Linux 下制造了一个 **隔离的文件环境** ，因此它执行的效率 **几乎等同于** 所部署的Linux主机。
+- 因此，Docker必须部署在含有 **Linux内核** 的系统上，如果其他系统想部署 Docker 就必须安装一个 **虚拟 Linux 环境** 。
+
+### 在 Windows 安装 Docker (Hyper-V 方式)
+
+参考：https://docs.docker.com/desktop/windows/install/
+
+#### 此方法支持的系统版本
+
+- Windows 11 64-bit: Pro version 21H2 or higher, or Enterprise or Education version 21H2 or higher.
+- Windows 10 64-bit: Pro 2004 (build 19041) or higher, or Enterprise or Education 1909 (build 18363) or higher.
+- 因为 Windows 10 and Windows 11 Home 无法开启 `Hyper-V` 功能（相当于虚拟机的功能）。
+
+#### 安装步骤
+
+1. 进入 `控制面板\程序` ，点击 `启用或关闭Windows功能` ，开启 `Hyper-V`。
+
+### 在 Windows 安装 Docker (WSL 2 方式)
+
+**Windows Subsystem for Linux (WSL)**
+
+参考：https://docs.docker.com/desktop/windows/install/
+
+#### 此方法支持的系统版本
+
+- Windows 11 64-bit: Home or Pro version 21H2 or higher, or Enterprise or Education version 21H2 or higher.
+- Windows 10 64-bit: Home or Pro 2004 (build 19041) or higher, or Enterprise or Education 1909 (build 18363) or higher.
+
+#### 安装步骤
+
+1. 进入 `控制面板\程序` ，点击 `启用或关闭Windows功能` ，开启 `适用于 Linux 的 Windows 子系统`。
+1. 下载安装 Linux 内核：https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+1. 双击 `Docker Desktop Installer.exe` 安装 `Docker Desktop` 。
+1. 重启系统。
+
+### 在 CentOS 安装 Docker
+
+Docker 只能在 **CentOS 7 或 CentOS 8** 的维护版本上安装。
+
+- 
+
+
 
