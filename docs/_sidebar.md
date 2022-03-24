@@ -17,13 +17,11 @@
       * [MyBatisPlus](编程开发/Java后端/常用框架与技术/MyBatisPlus/)
       * [SpringBoot](编程开发/Java后端/常用框架与技术/SpringBoot/)
       * 微服务
-      * Redis
-      * Jenkins
     * 项目实战
     * 面试题
   - 前端
     - 前端核心技术
-    - 服务器&工程化
+    - 服务器与工程化
     - 前端框架
     - 项目实战
   - Java大数据
@@ -54,7 +52,9 @@
 - <font style="font-weight:bold;font-size:17px;">数据库</font>
   - 基础知识
   - [MySQL](数据库/MySQL/)
-  - SQL Server
+  - SQLServer
+  - [ClickHouse](数据库/ClickHouse/)
+  - [Redis](数据库/Redis/)
   - [HBase](数据库/HBase/)
 - <font style="font-weight:bold;font-size:17px;">经验总结</font>
   - [工作经验](经验总结/工作经验/)
@@ -65,6 +65,7 @@
   - [VMware](运维/VMware/)
   - [Windows](运维/Windows/)
   - [Docker](运维/Docker/)
+  - Jenkins
 - <font style="font-weight:bold;font-size:17px;">计算机基础</font>
   - [计算机网络](计算机基础/计算机网络/)
   - 数据结构
@@ -78,7 +79,6 @@
 - <font style="font-weight:bold;font-size:17px;">设计与架构</font>
   - [软件架构](设计与架构/软件架构/)
   - [设计模式](设计与架构/设计模式/)
-
 - <font style="font-weight:bold;font-size:17px;">软件工程</font>
   - 需求分析与设计
   - 项目管理

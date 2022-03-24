@@ -22,7 +22,7 @@ hbase shell
 ## 查询数据
 
 ```sh
-scan 'zb_zhw_yw_mt:ads_prov_BJ_1_user_state_serial_20220210_d',{FILTER => "(PrefixFilter ('40_cb105a77bc521ef15c1297_')"}
+scan 'xxxx',{FILTER => "(PrefixFilter ('40_cb105a77bc521ef15c1297_')"}
 ```
 
 ## Data Manipulation commands
@@ -33,5 +33,13 @@ scan 'zb_zhw_yw_mt:ads_prov_BJ_1_user_state_serial_20220210_d',{FILTER => "(Pref
 # INTERVAL 表示计数提示间隔，即每计到10条打印一次
 # CACHE 表示缓存大小
 count 't1', INTERVAL => 10, CACHE => 1000
+```
+
+## Fliter
+
+```sh
+scan 'xxxx',{FILTER => "(PrefixFilter ('abc_')"}
+# ROWPREFIXFILTER 比 PrefixFilter 快多了，PrefixFilter会扫描全表
+scan 'xxxx',{ROWPREFIXFILTER => "abc_"}
 ```
 
