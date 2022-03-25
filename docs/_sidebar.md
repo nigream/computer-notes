@@ -17,6 +17,7 @@
       * [MyBatisPlus](编程开发/Java后端/常用框架与技术/MyBatisPlus/)
       * [SpringBoot](编程开发/Java后端/常用框架与技术/SpringBoot/)
       * 微服务
+    * [实用依赖库](编程开发/Java后端/实用依赖库/)
     * 项目实战
     * 面试题
   - 前端
@@ -86,4 +87,6 @@
   - 数字电路
 - <font style="font-weight:bold;font-size:17px;">电子产品</font>
   - [树莓派](电子产品/树莓派/)
+- <font style="font-weight:bold;font-size:17px;">编程史</font>
+  - [趣味小知识](/编程史/趣味小知识/)
 
