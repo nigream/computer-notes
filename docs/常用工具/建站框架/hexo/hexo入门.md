@@ -102,7 +102,7 @@
 
 6. 根目录下执行 `hexo deploy` 可以将生成的静态文件（即生成的 `public` 目录下的内容，在 `.deploy_git` 目录下有备份，并有本地 git 仓库）分别推送到两个库的对应分支（若从未存储过 github 和 gitee 的账号密码可能需要输入）。
 
-7. github 会默认将 `gh-pages` 分支作为静态页面部署的分支，所以不要做其他操作，可以直接访问 `https://nigream.github.io` ；而 gitee 没有这种设定，需要在仓库的服务中进入 `Gitee Pages` ，将 **部署分支** 设为上面配置的 `gitee-pages` ，**部署目录** 不填，点击 **启动** （以后推送后，需要点击 **刷新** 才能生效），访问地址为 `https://nigream.gitee.io`。
+7. github 会默认将 `gh-pages` 分支作为静态页面部署的分支，所以不要做其他操作，可以直接访问 `https://nigream.github.io` ；而 gitee 没有这种设定，需要在仓库的服务中进入 `Gitee Pages` ，将 **部署分支** 设为上面配置的 `gitee-pages` ，**部署目录** 不填，点击 **启动** （以后每次提交，都需要点击 **更新** 才能生效），访问地址为 `https://nigream.gitee.io`。
 
    ![image-20220308012347985](hexo入门/image-20220308012347985.png)
 
