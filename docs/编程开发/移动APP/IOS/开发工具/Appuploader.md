@@ -6,6 +6,7 @@
 
 1. 使用教程：https://blog.csdn.net/weixin_37178391/article/details/117282626
 2. Appuploader下载地址：http://www.applicationloader.net/
+2. 官方教程：http://help.applicationloader.net/topic/appuploader/
 
 ---
 

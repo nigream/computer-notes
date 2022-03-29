@@ -31,7 +31,7 @@
     * [Python后端](编程开发/Python/Python后端/)
   - [移动APP](编程开发/移动APP/)
     * [Android](编程开发/移动APP/Android/)
-    * [IOS](编程开发/移动APP/IOS/)
+    * [iOS](编程开发/移动APP/iOS/)
   - 代码规范
     - 阿里巴巴Java开发手册
     - 代码简洁之道
@@ -51,6 +51,8 @@
     - Ant
   - [<font style="font-weight:bold;font-size:15px;">建站框架</font>](常用工具/建站框架/)
     - [hexo](常用工具/建站框架/hexo/)
+  - [<font style="font-weight:bold;font-size:15px;">虚拟机工具</font>](常用工具/虚拟机工具/)
+    - [VMware](常用工具/虚拟机工具/VMware/)
 - <font style="font-weight:bold;font-size:17px;">数据库</font>
   - 基础知识
   - [MySQL](数据库/MySQL/)
@@ -64,7 +66,6 @@
 - <font style="font-weight:bold;font-size:17px;">测试</font>
 - <font style="font-weight:bold;font-size:17px;">运维</font>
   - [Linux](运维/Linux/)
-  - [VMware](运维/VMware/)
   - [Windows](运维/Windows/)
   - [Docker](运维/Docker/)
   - Jenkins
