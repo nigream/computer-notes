@@ -4,7 +4,6 @@
     * [Java基础](编程开发/Java后端/Java基础/)
     * [Java进阶](编程开发/Java后端/001-Java进阶/)
     * [Java高级](编程开发/Java后端/002-Java高级/)
-    * 数据库技术
     * [JavaWeb](编程开发/Java后端/JavaWeb/)
       * Web基础
       * Servlet
