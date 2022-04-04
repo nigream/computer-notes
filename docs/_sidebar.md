@@ -19,8 +19,10 @@
     * [实用依赖库](编程开发/Java后端/实用依赖库/)
     * 项目实战
     * 面试题
-  - 前端
-    - 前端核心技术
+  - [前端](编程开发/前端/)
+    - [HTML](编程开发/前端/HTML/)
+    - [CSS](编程开发/前端/CSS/)
+    - [JavaScript](编程开发/前端/JavaScript/)
     - 服务器与工程化
     - 前端框架
     - 项目实战
@@ -91,4 +93,7 @@
   - [树莓派](电子产品/树莓派/)
 - <font style="font-weight:bold;font-size:17px;">编程史</font>
   - [趣味小知识](/编程史/趣味小知识/)
+- [<font style="font-weight:bold;font-size:17px;">收集癖</font>](收集癖/)
+  - [网站收集](收集癖/网站收集)
+
 
