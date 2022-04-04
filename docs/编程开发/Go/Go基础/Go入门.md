@@ -40,7 +40,7 @@ http://pkg.go.dev/
 
 ### 镜像配置
 
-不安装镜像，就无法下载 **外部的依赖包** 。
+不配置镜像，就无法下载 **外部的依赖包** 。
 
 1. 执行如下命令：
 
@@ -60,13 +60,15 @@ http://pkg.go.dev/
 
 ### 本地依赖库配置
 
-1. 安装程序帮我们设置了一个用户级的环境变量 `GOPATH` ，我们可以修改它为自定地址： `E:\devtools\repos\go\public` 。
+1. 安装程序帮我们设置了一个用户级的环境变量 `GOPATH` ，我们可以修改它为自定义地址： `E:\devtools\repos\go\public` 。
 
    ![image-20220404034305175](Go入门/image-20220404034305175.png)
 
 2. 以防万一，我们可以再设置一个系统级的环境变量 `GOPATH` （实际是用户的环境变量优先级更高）。
 
 3. 执行 `go env` 可以查看配置是否成功。
+
+   - 修改 `GOPATH` 后， ` GOMODCACHE` 配置也自动变为了 `{GOPATH}\pkg\mod` 。
 
 
 
@@ -153,12 +155,24 @@ http://pkg.go.dev/
 
    - 执行后，在当前目录下生成了一个 `go.sum` 文件。
 
+   - 同时， `go.mod` 文件也新增了内容，列举了本模块的依赖。
+
+     ```go
+     module example/hello
+     
+     go 1.18
+     
+     require rsc.io/quote v1.5.2
+     
+     require (
+     	golang.org/x/text v0.0.0-20170915032832-14c0d48ead0c // indirect
+     	rsc.io/sampler v1.3.0 // indirect
+     )
+     ```
+
 4. 执行 `go run quote.go` 以执行上述代码。
 
    ```go
    E:\codes\go\learn\hello>go run quote.go
    Don't communicate by sharing memory, share memory by communicating.
    ```
-
-## 创建一个Go模块
-
