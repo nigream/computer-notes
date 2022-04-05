@@ -20,4 +20,14 @@
 ### 学习路线
 
 1. 程序员鱼皮：https://mp.weixin.qq.com/s/HbzLEt6NOP9Is9F3GOnbUQ
+1. MDN前端学习路线：https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer
+1. MDN名词解释：https://developer.mozilla.org/en-US/docs/Glossary
+
+### 社区
+
+1. https://discourse.mozilla.org/c/mdn/236
+
+### 学习方法
+
+1. 按照 https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer 中的顺序学习。
 
