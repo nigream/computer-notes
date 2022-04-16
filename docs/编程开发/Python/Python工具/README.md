@@ -1,28 +1,6 @@
-# Python概述
+# Python工具
 
 ---
-
-## 开发三件套
-
-### 解释器
-
-- Python 是解释型语言，即运行Python程序时，Python解释器将Python源代码一条一条先解释成机器码，再交给操作系统执行。
-- 因此，Python为不同操作系统设计不同的解释器，即可实现跨平台。
-- 我们通常说的安装Python，其实就是安装Python解释器。
-
-### 编辑器
-
-- 用于编写Python代码。
-
-### 包管理工具
-
-- 即管理Python库的工具。
-
-### 最佳实践
-
-- `Python 3.x + Pycharm + Anaconda`
-
-
 
 ## 名词解释
 
@@ -88,53 +66,73 @@ virtualenv 是一个 **环境管理工具** ，使用 virtualenv 可以创建一
 
 ### conda
 
+#### conda
+
+https://docs.conda.io/en/latest/
+
 1. 可以把 `conda` 看作是 `pip` + `virtualenv` + `PVM (Python Version Manager)` + 一些必要的底层库，也就是一个更完整也更大的集成管理工具。
 2. conda 是一个 **包管理工具** ，可以安装多种语言（包括 Python ）的包，它具有完美的包依赖关系处理能力，不用过分地去手动处理包之间的依赖关系。
 3. conda 也是一个 **环境管理工具** ，可以创建 **任意 Python 版本** 的虚拟隔离环境。
 
-```yaml
-# 镜像
-https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-```
+
+
+#### Anaconda
+
+https://www.anaconda.com/blog/whats-in-a-name-clarifying-the-anaconda-metapackage
+
+Anaconda有如下几种含义：
+
+- Anaconda 公司。
+- Anaconda Distribution = Anaconda Installer （Anaconda 公司的一个开源的 Python 发行版本，专注于数据科学，其包含了 conda、Python 等软件包，以及 numpy、pandas（数据分析）、scipy等科学计算包）
+- anaconda metapackage（里面包含 Anaconda 所需的所有依赖）
+- Anaconda Enterprise（企业版）
+- 不相关的同名软件（一个免费开源的Linux系统下载器）
 
 
 
-### Anaconda
-
-Anaconda 是一个开源的 Python 发行版本，其包含了 conda、Python 等软件包，以及 numpy、pandas（数据分析）、scipy等科学计算包。
-
-
-
-### Miniconda
+#### Miniconda
 
 Miniconda 功能等同于 Anaconda ，但它只包含 Anaconda 最基本的内容—— python 与 conda ，以及必要的依赖项，所占空间小于 Anaconda 。
+
+
+
+#### 简单区分
+
+https://stackoverflow.com/a/58147674/11249244
+
+```crystal
+Miniconda installer = Python + `conda`
+
+Anaconda installer = Python + `conda` + meta package `anaconda`
+
+meta Python pkg `anaconda` = about 160 other Python packages for daily use in data science
+
+Anaconda installer = Miniconda installer + `conda install anaconda`
+
+# 类似maven中的聚合工程（本身没有代码，只是引用一些依赖）
+Meta packages, are packages that do NOT contain actual softwares and simply depend on other packages to be installed. 
+```
+
+- `conda` 不是一个命令行工具，他是一个 `Python` 包，所以他不能下载直接使用，这里就需要用到 `Anaconda` 和 `Miniconda` 。
+- `Miniconda` 执行 `conda install anaconda` 即可让 `Mniconda` 变成 `Anaconda` ，只是文件夹名称不同。
+
+
+
+#### conda-forge
+
+https://conda-forge.org/docs/user/introduction.html
+
+- 为 conda 提供软件包的一个社区。
+- conda 官方的打包的包通过 default channel 发放，conda-forge 打包的包通过  `conda-forge` channel 发放。
+
+
+
+#### Miniforge
+
+- 与 Miniconda 类似，不过在有些平台 (如 ARMv8 64-bit、aarch64) Miniconda 不提供适配，但是 Miniforge 提供。
 
 
 
 ### Pycharm
 
 Python 软件的开发工具。
-
-
-
-## 执行Python程序方式
-
-### Python解释器
-
-- 
-- **解释器** 的种类：
-  - `CPython` : 官方的用 `C` 语言编写的版本。
-  - `Jython` : 用 `Java` 语言编写的可以运行在 `Java` 平台的版本。
-  - `IronPython` : 可以运行在 `.NET` 和 `Mono` 平台。
-  - `PyPy` : 用 `Python` 实现的，支持 `JIT` 即时编译。
-- 直接编写文本文件，执行 Python 程序时，只需执行 `python xxx.py` (Python 2.x 及其以下版本) 或 `python3 xxx.py` (Python 3.x 版本)命令即可。
-
-### 交互式方法
-
-即 直接在 `Python Shell` 中执行 Python 的代码。
-
-- 命令行输入 `python` 即可进入 `Python Shell` 。
-- 执行 `exit()` 或者 `ctrl + z` 即可退出 `Python  Shell`
-
-### IPython

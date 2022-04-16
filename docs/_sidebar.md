@@ -28,8 +28,6 @@
     - 项目实战
   - Java大数据
   - [Python](编程开发/Python/)
-    * [Python基础](编程开发/Python/Python基础/)
-    * [Python后端](编程开发/Python/Python后端/)
   - [移动APP](编程开发/移动APP/)
     * [Android](编程开发/移动APP/Android/)
     * [iOS](编程开发/移动APP/iOS/)
@@ -93,7 +91,8 @@
   - [树莓派](电子产品/树莓派/)
 - <font style="font-weight:bold;font-size:17px;">编程史</font>
   - [趣味小知识](/编程史/趣味小知识/)
+  - [技术历史](/编程史/技术历史/)
+  - [专业术语](/编程史/专业术语/)
 - [<font style="font-weight:bold;font-size:17px;">收集癖</font>](收集癖/)
   - [网站收集](收集癖/网站收集)
-
 

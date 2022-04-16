@@ -40,6 +40,13 @@ git remote update origin --prune
 git fetch origin xxx
 ```
 
+### 提交相关
+
+```sh
+# 修改本地上一次提交的信息（该commit必须还未push到远程仓库）
+git commit --amend -m "New commit message."
+```
+
 
 
 
