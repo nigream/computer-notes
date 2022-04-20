@@ -66,6 +66,12 @@ winrar x xxxx.rar
 		如：winrar x mtex-capability-positioning-1.3.0.zip .\mtex-capability-positioning-1.3.0\
 ```
 
+### 注释
+
+```bash
+:: 这是注释
+```
+
 
 
 
