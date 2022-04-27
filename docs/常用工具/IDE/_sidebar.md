@@ -1,2 +1,3 @@
 - <font style="font-weight:bold;font-size:17px;">IDE</font>
-- [IDEA](常用工具/IDE/IDEA)
+- [IDEA](常用工具/IDE/IDEA/)
+- [VSCode](常用工具/IDE/VSCode/)

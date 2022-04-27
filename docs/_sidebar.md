@@ -43,8 +43,8 @@
     - SoapUI
     - [curl](常用工具/URL工具/curl/)
   - [<font style="font-weight:bold;font-size:15px;">IDE</font>](常用工具/IDE/)
-    - [IDEA](常用工具/IDE/IDEA)
-    - VSCode
+    - [IDEA](常用工具/IDE/IDEA/)
+    - [VSCode](常用工具/IDE/VSCode/)
   - [<font style="font-weight:bold;font-size:15px;">项目构建工具</font>](常用工具/项目构建工具/)
     - [Maven](常用工具/项目构建工具/Maven/)
     - Gradle
