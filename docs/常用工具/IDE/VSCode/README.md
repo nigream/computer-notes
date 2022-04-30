@@ -2,3 +2,6 @@
 
 ---
 
+## 资料
+
+- VSCode文档：https://code.visualstudio.com/docs
