@@ -88,3 +88,16 @@
    - 清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
    ```
 
+### macOS
+
+1. 无脑下一步。
+
+2. 配置环境变量。
+
+   ```sh
+   
+   ```
+
+   
+
+3. 

@@ -2,7 +2,7 @@
 
 ---
 
-## 概述
+## Case-Insensitive
 
 - `html` 标签大小写不敏感，但是建议全小写。
 
@@ -49,8 +49,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
 
 ![grumpy-cat-attribute-small](HTML基础/grumpy-cat-attribute-small.png)
 
+### 单引号还是双引号
+
 - 属性值一定要用 `""` 或者 `''` 包裹起来，否则如果属性值中包含空格，可能会出问题。
--  `""` 或者 `''` 是等价的，在一种引号中使用另一种引号是合法的，但是在一个引号中使用同一种引号，则需要使用转义字符。
+- `""` 或者 `''` 是等价的，在一种引号中使用另一种引号是合法的，但是在一个引号中使用同一种引号，则需要使用转义字符。
 - 如：这样是错的： `<a href='https://www.example.com' title='Isn't this fun?'>A link to my example.</a>` 而这样是对的： `<a href='https://www.example.com' title='Isn&apos;t this fun?'>A link to my example.</a>`
 
 ### Boolean attributes
@@ -96,5 +98,30 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
 ### `<head></head>`
 
 - 这个元素中的内容将不会在页面上呈现，它包含了浏览器可以搜索的关键词、CSS、字符集等。
-- 
 
+### `<body></body>`
+
+- 页面上的所有内容都必须被包含在这个标签中。
+
+## Whitespace
+
+- 在两个字符之间不管有按多少次空格键和换行键，都会被渲染为 `一个空格` 。
+- 元素缩进时，我们一般使用 `两个空格` 。
+
+## 转义字符(Entity references)
+
+常用转义字符如下：
+
+| Literal character | Character reference equivalent | Description               |
+| :---------------- | :----------------------------- | ------------------------- |
+| `<`               | `&lt;`                         | less than                 |
+| `>`               | `&gt;`                         | greater than              |
+| `"`               | `&quot;`                       | quotation                 |
+| `'`               | `&apos;`                       | apostrophe(省略符号/撇号) |
+| `&`               | `&amp;`                        | ampersand                 |
+
+转义字符大全：https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references
+
+## HTML Comments
+
+- `<!-- 这是注释 -->` 
