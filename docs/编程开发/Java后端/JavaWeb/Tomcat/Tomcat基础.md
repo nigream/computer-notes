@@ -70,6 +70,14 @@ https://gongxufan.github.io/2017/10/20/tomcat-source-debug/
                <artifactId>ecj</artifactId>
                <version>4.5.1</version>
            </dependency>
+           
+           <!-- tomcat 9.0.36 需要 -->
+           <dependency>
+               <groupId>biz.aQute.bnd</groupId>
+               <artifactId>biz.aQute.bndlib</artifactId>
+               <version>5.2.0</version>
+               <scope>provided</scope>
+           </dependency>
        </dependencies>
    
        <build>
@@ -263,6 +271,22 @@ https://gongxufan.github.io/2017/10/20/tomcat-source-debug/
 
     ![image-20220518140821222](Tomcat基础/image-20220518140821222.png)
 
+    - 有些版本的tomcat尽管进行了上面提到的编码设置，可能在这里仍然会乱码：
+
+      ![image-20220518213430605](Tomcat基础/image-20220518213430605.png)
+
+    - 修改浏览器语言为英文并重启后，乱码有所缓解，但仍有乱码（目前不知道如何解决）：
+
+      ![image-20220518213623237](Tomcat基础/image-20220518213623237.png)
+
+      ![image-20220518213058420](Tomcat基础/image-20220518213058420.png)
+
+    综上，我下面使用 `8.5.42` 版本，没有乱码问题。
+
+12. 现在解决上一步的问题，我们可以发现刷新页面 `java.lang.ClassNotFoundException: org.apache.jsp.index_jsp` 和  `Unable to compile class for JSP` 错误会交替出现；在 `org.apache.catalina.startup.ContextConfig` 中如下位置加上一行代码： `context.addServletContainerInitializer(new JasperInitializer(), null);` ，以初始化JSP解析器。
+
+    ![image-20220518223400928](Tomcat基础/image-20220518223400928.png)
+
     ```java
     webConfig();
     
@@ -276,11 +300,11 @@ https://gongxufan.github.io/2017/10/20/tomcat-source-debug/
         validateSecurityRoles();
     }
 
-5. 
+5. 再次运行并访问 `http://localhost:8080` 发现一切正常。
 
-![image-20220517032351503](Tomcat基础/image-20220517032351503.png)
 
-![image-20220517032448345](Tomcat基础/image-20220517032448345.png)
+
+
 
 
 
