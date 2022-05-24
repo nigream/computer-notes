@@ -89,6 +89,7 @@
 - <font style="font-weight:bold;font-size:17px;">物理硬件</font>
   - 数字电路
 - <font style="font-weight:bold;font-size:17px;">电子产品</font>
+  - [电脑](电子产品/电脑/)
   - [树莓派](电子产品/树莓派/)
 - <font style="font-weight:bold;font-size:17px;">编程史</font>
   - [趣味小知识](/编程史/趣味小知识/)

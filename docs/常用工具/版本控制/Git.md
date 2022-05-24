@@ -47,6 +47,16 @@ git fetch origin xxx
 git commit --amend -m "New commit message."
 ```
 
+### Config
+
+```sh
+# 获取用户名
+git config user.name
+
+# 设置用户名
+git config user.name 'nigream'
+```
+
 
 
 
