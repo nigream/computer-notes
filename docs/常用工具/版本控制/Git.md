@@ -38,6 +38,12 @@ git remote update origin --prune
 
 # 获取远程分支 xxx
 git fetch origin xxx
+
+# 拉取所有分支
+git fetch
+
+# 拉取远程的某个分支到本地
+git checkout -b xxxx origin/xxxx
 ```
 
 ### 提交相关
