@@ -64,13 +64,10 @@
    CONDA_HOME = E:\devtools\sdk\conda\miniconda4.11.0
    
    # 在 Path 中新增如下几项：
-   %CONDA_HOME%\Scripts
-   %CONDA_HOME%\Library\bin
-   %CONDA_HOME%\Library\mingw-w64\bin
-   %CONDA_HOME%\Library\usr\bin
+   %CONDA_HOME%\Scripts;%CONDA_HOME%\Library\bin;%CONDA_HOME%\Library\mingw-w64\bin;%CONDA_HOME%\Library\usr\bin
    ```
-
-4. 添加镜像：在 `C:\Users\nigre\.condarc` 中加入如下配置（如果没有则新建该文件）。
+   
+4. 添加镜像：在 `%homepath%\.condarc` 中加入如下配置（如果没有则新建该文件）。
 
    - 配置后执行 `conda clean --i` 以清除索引缓存，保证用的是镜像站提供的索引。
    - 下载依赖时可能需要多试几次（可能要关闭代理）。
@@ -311,7 +308,7 @@ Invoke-Expression : 所在位置 行:1 字符: 2
 
 #### 解决方案
 
-- 可能是因为每加这个几个环境变量。
+- 可能是因为没加这个几个环境变量。
 - 为什么说可能，因为加上后没有解决问题，但是重启电脑后发现问题解决了。
 - 也可能是要删除，注册表 `计算机\HKEY_CURRENT_USER\Software\Microsoft\Command Processor` 路径下的 `AutoRun`。
 
