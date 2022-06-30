@@ -84,3 +84,28 @@ firewall-cmd --zone=public --add-port=80/tcp --permanent
 firewall-cmd --list-ports
 ```
 
+
+
+### 进程相关
+
+```sh
+# 查询指定服务名称的进程信息
+ps -ef | grep hbase
+
+字段含义如下：
+UID       PID       PPID      C     STIME    TTY       TIME              CMD
+
+root      2649       1           0       Jun28      ?          03:53:28        java -jar  a.jar
+root     19997     19712     0     10:24      pts/0    00:00:00       grep --color=auto jar
+
+列序号    列含义    列含义说明
+1    UID    用户标识ID
+2    PID    进程ID
+3    PPID    父进程ID
+4    C    CPU占用率
+5    STIME    进程开始时间
+6    TTY    启动此进程的TTY（终端设备）
+7    TIME    此进程运行的总时间
+8    CMD    完整的命令名(带启动参数)
+```
+
