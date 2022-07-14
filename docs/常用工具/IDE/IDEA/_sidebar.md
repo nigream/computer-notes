@@ -1,3 +1,4 @@
 - <font style="font-weight:bold;font-size:17px;">IDEA</font>
 - [配置](常用工具/IDE/IDEA/配置)
 - [快捷键](常用工具/IDE/IDEA/快捷键)
+- [常用插件](常用工具/IDE/IDEA/常用插件)
