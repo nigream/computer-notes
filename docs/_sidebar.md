@@ -49,8 +49,9 @@
     - [hexo](常用工具/建站框架/hexo/)
   - [<font style="font-weight:bold;font-size:15px;">虚拟机工具</font>](常用工具/虚拟机工具/)
     - [VMware](常用工具/虚拟机工具/VMware/)
-  - [<font style="font-weight:bold;font-size:15px;">非开发工具</font>](常用工具/虚拟机工具/)
-    - [Tim](常用工具/非开发工具/Tim/)
+- [<font style="font-weight:bold;font-size:17px;">非开发工具</font>](非开发工具/)
+  - [<font style="font-weight:bold;font-size:15px;">Tim</font>](非开发工具/Tim/)
+
 - <font style="font-weight:bold;font-size:17px;">数据库</font>
   - 基础知识
   - [MySQL](数据库/MySQL/)
@@ -60,7 +61,6 @@
   - [HBase](数据库/HBase/)
 - <font style="font-weight:bold;font-size:17px;">游戏开发</font>
   - [<font style="font-weight:bold;font-size:15px;">Unity</font>](游戏开发/Unity/)
-
 - <font style="font-weight:bold;font-size:17px;">经验总结</font>
   - [工作经验](经验总结/工作经验/)
   - [开发经验](经验总结/开发经验/)
