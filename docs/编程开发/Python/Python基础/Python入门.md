@@ -22,25 +22,37 @@
 
 - `Python 3.x + PyCharm + Miniconda`
 
-## 执行Python程序方式
+## Python解释器
 
-### Python解释器
+### 解释器的种类
 
-- **解释器** 的种类：
-  - `CPython` : 官方的用 `C` 语言编写的版本。
-  - `Jython` : 用 `Java` 语言编写的可以运行在 `Java` 平台的版本。
-  - `IronPython` : 可以运行在 `.NET` 和 `Mono` 平台。
-  - `PyPy` : 用 `Python` 实现的，支持 `JIT` 即时编译。
+- `CPython` : 官方的用 `C` 语言编写的版本。
+- `Jython` : 用 `Java` 语言编写的可以运行在 `Java` 平台的版本。
+- `IronPython` : 可以运行在 `.NET` 和 `Mono` 平台。
+- `PyPy` : 用 `Python` 实现的，支持 `JIT` 即时编译。
+
+### 使用解释器的方式
+
+#### 执行 python 源文件
+
 - 直接编写文本文件，执行 Python 程序时，只需执行 `python xxx.py` (Python 2.x 及其以下版本) 或 `python3 xxx.py` (Python 3.x 版本)命令即可。
 
-### 交互式方法
+#### Python Shell
 
 即 直接在 `Python Shell` 中执行 Python 的代码。
 
 - 命令行输入 `python` 即可进入 `Python Shell` 。
 - 执行 `exit()` 或者 `ctrl + z` 即可退出 `Python  Shell`
 
-### IPython
+#### python -c command [arg] ...
+
+- 执行 python 表达式，表达式建议用单引号引起来。
+
+#### python -m module [arg] ...
+
+- 执行 模块 中的方法。
+
+#### IPython
 
 ## 安装Python
 
