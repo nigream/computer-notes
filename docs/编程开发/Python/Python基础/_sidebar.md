@@ -1,3 +1,5 @@
 - <font style="font-weight:bold;font-size:17px;">Python基础</font>
-- [Python入门](编程开发/Python/Python基础/Python入门)
+- [学习准备](编程开发/Python/Python基础/学习准备)
+- [Python语法](编程开发/Python/Python基础/Python语法)
+- [Python解释器](编程开发/Python/Python基础/Python解释器)
 - [Python命令](编程开发/Python/Python基础/Python命令)
