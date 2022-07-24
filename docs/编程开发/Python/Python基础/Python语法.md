@@ -106,6 +106,50 @@ Usage: thingy [OPTIONS]
 'on'
 ```
 
+- 当右边的参数越界时，结果会取到最后一个字符
+- 当左边的参数越界时，结果会是  `''` 
+
+```python
+>>> word[4:42]
+'on'
+>>> word[42:]
+''
+```
+
+### 字符串是不可变对象
+
+- 不能给字符串的某个索引，或某段切片赋值。
+
+```python
+>>> word[0] = 'J'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> word[2:] = 'py'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+```
+
+- 如果需要一个新的字符串，必须要新建一个
+
+```python
+>>> 'J' + word[1:]
+'Jython'
+>>> word[:2] + 'py'
+'Pypy'
+```
+
+### len()
+
+- 字符串的长度
+
+```python
+>>> s = 'supercalifragilisticexpialidocious'
+>>> len(s)
+34
+```
+
 
 
 
