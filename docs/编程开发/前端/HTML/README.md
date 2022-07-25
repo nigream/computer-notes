@@ -15,7 +15,8 @@
 ### 学习教程
 
 1. MDN（Mozilla Developer Network）：https://developer.mozilla.org/en-US/
-2. 尚硅谷B站视频：https://www.bilibili.com/video/BV1XJ411X7Ud
+2. MDN 参考手册：https://developer.mozilla.org/en-US/docs/Web
+3. 尚硅谷B站视频：https://www.bilibili.com/video/BV1XJ411X7Ud
 
 ### 学习路线
 

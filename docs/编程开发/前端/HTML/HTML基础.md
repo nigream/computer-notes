@@ -125,3 +125,26 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
 ## HTML Comments
 
 - `<!-- 这是注释 -->` 
+
+## `<head>`
+
+### `<title>`
+
+**作用**
+
+- 标签页名称
+- 收藏的默认默认名称
+- 搜索结果
+
+### `<meta>`
+
+#### 指定字符编码
+
+- 虽然有些浏览器可能会自动修复编码问题，但最好还是指定编码为 `utf-8` 。
+
+```html
+<meta charset="utf-8">
+```
+
+
+
