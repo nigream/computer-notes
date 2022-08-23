@@ -63,9 +63,18 @@ git config user.name
 git config user.name 'nigream'
 ```
 
+## ssh配置
 
+```sh
+# 生成公钥秘钥
+ssh-keygen -t rsa -C "xxxx@gmail.com"
+```
 
+- 生成 公钥（`id_rsa`）、私钥（`id_rsa.pub`）两个文件在 `%homepath%/.ssh` 目录下
 
+  ![image-20220824014256621](Git/image-20220824014256621.png)
+
+- 将 **公钥** 配置到 gitee、github、gitlab等平台即可使用 ssh url 进行 clone。
 
 ## 常见问题
 
