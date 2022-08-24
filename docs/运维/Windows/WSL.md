@@ -30,6 +30,19 @@
 - 执行 `powershell -c bash ~` 可进入 WSL。
 - 执行 `exit` 可退出 WSL 。
 
+## 设置root用户密码
+
+1. 执行 `sudo  passwd root` 输入当前用户密码。
+2. 两次输入 `root` 用户密码。
+
+```sh
+developer@DESKTOP-JBP0KFV:/etc/apt/sources.list.d$ sudo  passwd root
+[sudo] password for developer:
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
 
 
 ---
