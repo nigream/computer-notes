@@ -52,7 +52,12 @@
 - [<font style="font-weight:bold;font-size:17px;">非开发工具</font>](非开发工具/)
   - [<font style="font-weight:bold;font-size:15px;">Tim</font>](非开发工具/Tim/)
 
-- <font style="font-weight:bold;font-size:17px;">数据库</font>
+- [<font style="font-weight:bold;font-size:17px;">消息队列</font>](消息队列/)
+  - 通用知识
+
+  - [<font style="font-weight:bold;font-size:15px;">RabbitMQ</font>](消息队列/RabbitMQ/)
+  
+- [<font style="font-weight:bold;font-size:17px;">数据库</font>](数据库/)
   - 基础知识
   - [MySQL](数据库/MySQL/)
   - SQLServer
