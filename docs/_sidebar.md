@@ -1,19 +1,5 @@
 - <font style="font-weight:bold;font-size:17px;">编程开发</font>
   - [<font style="font-weight:bold;font-size:15px;">Java后端</font>](编程开发/Java后端/)
-    * [JDK冷门应用](编程开发/Java后端/JDK冷门应用/)
-    * [Java基础](编程开发/Java后端/Java基础/)
-    * [Java进阶](编程开发/Java后端/001-Java进阶/)
-    * [Java高级](编程开发/Java后端/002-Java高级/)
-    * [JavaWeb](编程开发/Java后端/JavaWeb/)
-    * [常用框架与技术](编程开发/Java后端/常用框架与技术/)
-      * [MyBatis](编程开发/Java后端/常用框架与技术/MyBatis/)
-      * [Spring](编程开发/Java后端/常用框架与技术/Spring/)
-      * [MyBatisPlus](编程开发/Java后端/常用框架与技术/MyBatisPlus/)
-      * [SpringBoot](编程开发/Java后端/常用框架与技术/SpringBoot/)
-      * 微服务
-    * [实用依赖库](编程开发/Java后端/实用依赖库/)
-    * 项目实战
-    * 面试题
   - [<font style="font-weight:bold;font-size:15px;">前端</font>](编程开发/前端/)
     - [HTML](编程开发/前端/HTML/)
     - [CSS](编程开发/前端/CSS/)
@@ -49,14 +35,12 @@
     - [hexo](常用工具/建站框架/hexo/)
   - [<font style="font-weight:bold;font-size:15px;">虚拟机工具</font>](常用工具/虚拟机工具/)
     - [VMware](常用工具/虚拟机工具/VMware/)
-- [<font style="font-weight:bold;font-size:17px;">非开发工具</font>](非开发工具/)
-  - [<font style="font-weight:bold;font-size:15px;">Tim</font>](非开发工具/Tim/)
-
 - [<font style="font-weight:bold;font-size:17px;">消息队列</font>](消息队列/)
   - 通用知识
 
-  - [<font style="font-weight:bold;font-size:15px;">RabbitMQ</font>](消息队列/RabbitMQ/)
+  - [<font style="font-weight:bold;font-size:15px;">Kafka</font>](消息队列/Kafka/)
   
+  - [<font style="font-weight:bold;font-size:15px;">RabbitMQ</font>](消息队列/RabbitMQ/)
 - [<font style="font-weight:bold;font-size:17px;">数据库</font>](数据库/)
   - 基础知识
   - [MySQL](数据库/MySQL/)
@@ -102,4 +86,6 @@
   - [专业术语](/编程史/专业术语/)
 - [<font style="font-weight:bold;font-size:17px;">收集癖</font>](收集癖/)
   - [网站收集](收集癖/网站收集)
+- [<font style="font-weight:bold;font-size:17px;">非开发工具</font>](非开发工具/)
+  - [<font style="font-weight:bold;font-size:15px;">Tim</font>](非开发工具/Tim/)
 
