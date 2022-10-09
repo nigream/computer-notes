@@ -125,26 +125,3 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements
 ## HTML Comments
 
 - `<!-- 这是注释 -->` 
-
-## lang 属性
-
-### `<html>`
-
-- 用于指定网页使用的主要语言。
-- **作用：**
-  - 可用于正确地显示文字。
-  - 可以用于 **网页阅读器** 为 **视障用户** 读出正确的读音（比如法语和英语中都有six，但读音不同）。
-- 可选值：zh-CN、en-US
-
-```html
-<html lang="zh-CN">
-  …
-</html>
-```
-
-### 其他标签
-
-```html
-<p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
-```
-
