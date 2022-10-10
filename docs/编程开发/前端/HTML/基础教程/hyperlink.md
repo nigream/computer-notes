@@ -5,13 +5,12 @@
 ## 什么是超链接
 
 - **超链接** 使我们能够将我们的文档链接到 **任何其他文档(或其他资源)** ，也可以链接到 **文档的指定部分** 。
-- **超链接** 不等价于 `<a>` 标签。
 
 ## `<a>`
 
 ### 属性
 
-- `href` 用于指定链接到的url。
+- `href` 用于指定链接到的 url 。
 - `title` 用于指定鼠标悬停显示的文字。
   - 注意：由于仅仅使用 **键盘或触摸屏** 的设备无法显示这个文字，所以，如果有重要的文字，不要放在这个属性中。
 
@@ -19,7 +18,7 @@
   <a
     href="https://www.mozilla.org/en-US/"
     title="The best place to find more information about Mozilla's
-          mission and how to contribute">the Mozilla homepage</a>.
+          mission and how to contribute">the Mozilla homepage</a>
 ```
 
 ### 块级链接
@@ -129,7 +128,50 @@
 
 
 
+## `<a>` 邮件链接
 
+### 例子
+
+- `<a>` 标签的 `href` 属性填 `mailto:example@example.com` ，可以形成一个 **邮件链接** 。
+- 点击此链接，系统会打开本机的邮件程序，并跳转到给指定邮箱地址 **发邮件的界面** 。
+
+```html
+<a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+```
+
+### 指定邮件详细信息
+
+#### 语法
+
+- 可以指定多个 **收件人** (用 **逗号** 隔开) 。
+- 可以用 `query iterm` 的形式 (即Get请求传参的方式)，指定发送邮件的 **详细信息** 。
+- 每个字段的值需要进行 **URL编码** ，即 **非打印字符** (如制表符、换行符、分页符等) 和 **空格** 需要用 **百分号转义** 来表示。
+
+```html
+<a href="mailto:user1@example.com,user2@example.com...?field1=xxxx&field2=xxx">Send email to nowhere</a>
+```
+
+#### 标头字段
+
+- `cc` : **抄送人** (可以指定多个，用 **逗号** 隔开)
+- `bcc` : **密件抄送人** (可以指定多个，用 **逗号** 隔开)
+- `subject` : **主题** 
+- `body` : **主体** (并非真正的标头字段，但允许你指定简短的主体信息)
+
+```html
+<a href="mailto:nowhere@mozilla.org,xxx@zwc.com?cc=name2@rapidtables.com,xxx1@zwc.com&bcc=name3@rapidtables.com,xxx2@zwc.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+    Send mail with cc, bcc, subject and body
+</a>
+```
+
+### `mailto:` 后留空
+
+- 实际上 `mailto:` 后可以留空。
+- 点击此链接，系统会打开本机的邮件程序，并跳转到给 **发邮件的界面** (但不指定邮箱地址，用户可以自己手动指定)。
+
+```html
+<a href="mailto:">Send email to nowhere</a>
+```
 
 
 
