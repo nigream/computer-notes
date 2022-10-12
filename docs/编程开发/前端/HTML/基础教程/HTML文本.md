@@ -207,3 +207,60 @@
 
 - 曾经存在 `<acronym>` 专门展示 acronym，现已废除。
 
+### `<address>` 联系方式
+
+- 语义：联系方式。
+- 效果：所包含的内容会以斜体形式呈现。
+
+```html
+<address>Chris Mills, Manchester, The Grim North, UK</address>
+```
+
+**包裹复杂的结构**
+
+```html
+<address>
+  <p>
+    Chris Mills<br />
+    Manchester<br />
+    The Grim North<br />
+    UK
+  </p>
+
+  <ul>
+    <li>Tel: 01234 567 890</li>
+    <li>Email: me@grim-north.co.uk</li>
+  </ul>
+</address>
+```
+
+**包裹链接**
+
+- 呈现为一个斜体的链接。
+
+```html
+<address>
+  Page written by <a href="../authors/chris-mills/">Chris Mills</a>.
+</address>
+```
+
+**最佳实践**
+
+- `<address>` 应该仅仅用在 `<article>` (用于表示页面中独立的一部分：如一篇文章、一篇博客、一个post、一个评论、一张卡片等) 或 `<body>` 标签中，用于展示该 `<article>` 或 `<body>` 的 **联系信息** 。
+- `<address>` 一般用在 **网页的 footer** 去展示该网站的 **联系信息** ；或用在一篇 **文章内** 展示作者的 **联系信息** ；千万不要用于展示一些无关的 **联系信息** 。
+
+### `<sup>` 上标 和 `<sub>` 下标
+
+- 一般用于 **日期** 、 **化学公式** 、 **数学方程式** 等。
+
+```html
+<p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+<p>
+  Caffeine's chemical formula is
+  C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+</p>
+<p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+```
+
+
+
