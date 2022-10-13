@@ -17,7 +17,7 @@
 3. 便于视障人士找到他想要的内容 (否则他可能需要听完整个网页的内容)。
 4. 便于 css 和 js 的使用。
 
-### 为什么要使用语义化的标签
+## 为什么要使用语义化的标签
 
 同样在页面呈现一个 **标题** ，我们可以有一下两种做法：
 
@@ -260,6 +260,90 @@
   C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
 </p>
 <p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+```
+
+
+
+### 计算机代码相关
+
+#### `<code>` 代码短片段
+
+- 表示 **代码短片段** ，使用默认的 **等宽字体** 呈现。
+
+#### `<pre>` 代码片段
+
+- 表示 **代码片段** ，会保留任何 **缩进和空格** ，使用默认的 **非比例字体** 或 **等宽字体** 呈现。
+
+#### `<var>` 变量
+
+- 表示 **变量** ，通常采用 **当前字体的斜体** 形式呈现。
+
+#### `<kbd>` 文本输入
+
+- 表示 **文本输入** ，按照惯例，会以 **等宽字体** 呈现（但这并非HTML标准所要求的）。
+
+#### `<samp>` 计算机程序输出
+
+- The Sample Output element
+- 表示 **计算机程序输出**  ，使用默认的 **等宽字体** 呈现。
+
+#### 例子
+
+- 上述标签经常会嵌套使用。
+
+```html
+<pre><code>const para = document.querySelector('p');
+
+para.onclick = function() {
+  alert('Owww, stop poking me!');
+}</code></pre>
+
+<p>
+  You shouldn't use presentational elements like <code>&lt;font&gt;</code> and
+  <code>&lt;center&gt;</code>.
+</p>
+
+<p>
+  In the above JavaScript example, <var>para</var> represents a paragraph
+  element.
+</p>
+
+<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+<pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+```
+
+### `<time>` 时间和日期
+
+- 使用 `datetime` 属性，提供一个计算机可读的时间（因为文本形式的时间多种多样）。
+
+```html
+<time datetime="2016-01-20">20 January 2016</time>
+```
+
+- 有多种格式
+
+```html
+<!-- Standard simple date -->
+<time datetime="2016-01-20">20 January 2016</time>
+<!-- Just year and month -->
+<time datetime="2016-01">January 2016</time>
+<!-- Just month and day -->
+<time datetime="01-20">20 January</time>
+<!-- Just time, hours and minutes -->
+<time datetime="19:30">19:30</time>
+<!-- You can do seconds and milliseconds too! -->
+<time datetime="19:30:01.856">19:30:01.856</time>
+<!-- Date and time -->
+<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+<!-- Date and time with timezone offset -->
+<time datetime="2016-01-20T19:30+01:00">
+  7.30pm, 20 January 2016 is 8.30pm in France
+</time>
+<!-- Calling out a specific week number -->
+<time datetime="2016-W04">The fourth week of 2016</time>
 ```
 
 
