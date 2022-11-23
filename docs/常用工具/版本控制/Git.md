@@ -32,6 +32,8 @@ git branch -D xxx
 ```sh
 # 设置远程分支
 git remote add origin https://github.com/nigream/learning-notes.git
+# 修改远程分支地址
+git remote set-url origin https://github.com/nigream/learning-notes.git
 
 # 刷新分支
 git remote update origin --prune
