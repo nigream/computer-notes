@@ -16,6 +16,24 @@
 
 
 
+## browser developer tools
+
+### DOM inspector
+
+- 右击节点，会出现：删除节点、编辑、修改元素打开状态(如 **:hover/:active/:focus** 等)、复制html、复制CSS选择器等功能。
+
+### CSS editor
+
+- CSS样式的应用，是按照 **most-to-least-specific** 的优先级，即 **最具体的选择器优先级最高** 。
+
+![image-20221127214807081](Debugger/image-20221127214807081.png)
+
+
+
+
+
+
+
 
 
 
