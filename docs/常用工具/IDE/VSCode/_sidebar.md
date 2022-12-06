@@ -1,3 +1,4 @@
-- <font style="font-weight:bold;font-size:17px;">VSCode</font>
+- <font style="font-weight:bold;font-size:17px;">[VSCode](常用工具/IDE/VSCode/)</font>
 - [常用插件](常用工具/IDE/VSCode/常用插件)
 - [settings](常用工具/IDE/VSCode/settings)
+- [Formatting](常用工具/IDE/VSCode/Formatting)
