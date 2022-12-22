@@ -9,7 +9,8 @@
 #### 说明
 
 - 官方说明：https://code.visualstudio.com/docs/languages/html#_formatting
-- 基于 [js-beautify](https://www.npmjs.com/package/js-beautify) ，提供了一些配置项
+- 基于 [js-beautify](https://github.com/beautify-web/js-beautify) ，提供了一些配置项
+- `"editor.defaultFormatter": "vscode.html-language-features"`
 
 #### 使用
 
@@ -19,9 +20,29 @@
 ### beautify
 
 - 插件地址：https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify
-- 同样基于 [js-beautify](https://www.npmjs.com/package/js-beautify) ，但比VSCode内置的beautify多了些个性化配置项。
+- 同样基于 [js-beautify](https://github.com/beautify-web/js-beautify) ，但比VSCode内置的beautify多了些个性化配置项。
+- `"editor.defaultFormatter": "HookyQR.beautify"`
 
+#### 自定义配置
 
+创建文件 `.jsbeautifyrc` 
+
+可选配置：https://github.com/HookyQR/VSCodeBeautify/blob/master/Settings.md
+
+```json
+{
+  "indent_size": 2,
+  "selector_separator_newline": false,
+  // 单独设置html中css的格式化规则
+  "html": {
+    "css": {
+      "selector_separator_newline": false
+    }
+  }
+}
+```
+
+#### 关于各配置的优先级
 
 ### Prettier
 
@@ -38,5 +59,26 @@
   },
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true
+```
+
+## 格式化配置总结
+
+```json
+  // format
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "HookyQR.beautify",
+  // html
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  // css
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  // js
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  }
 ```
 
