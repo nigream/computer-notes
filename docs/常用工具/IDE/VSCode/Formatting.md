@@ -4,6 +4,13 @@
 
 ## HTML
 
+### Prettier
+
+- 插件地址：https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+- 可配置内容较少，且格式化后很丑，点名批评 **文本和标签同行时，会自动换行，导致多出空格** 。
+
+
+
 ### VSCode的默认格式化工具
 
 #### 说明
@@ -16,6 +23,8 @@
 
 - `Shift+Alt+F` : 格式化文件
 - `Ctrl+K Ctrl+F` : 格式化选中的内容
+
+
 
 ### Beautify
 
@@ -33,6 +42,8 @@
 4. 如果 合法的 `.jsbeautifyrc` 文件不存在，则使用  `settings.json` 中 [映射的规则](https://github.com/HookyQR/VSCodeBeautify#vs-code--jsbeautifyrc-settings-map) 。
 
 #### 默认配置
+
+- 默认配置：https://github.com/HookyQR/VSCodeBeautify/blob/master/Settings.md
 
 
 
@@ -54,11 +65,6 @@
   }
 }
 ```
-
-### Prettier
-
-- 插件地址：https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-- 可配置内容较少，且格式化后很丑，点名批评 **文本和标签同行时，会自动换行，导致多出空格** 。
 
 
 

@@ -2,3 +2,4 @@
 - [常用插件](常用工具/IDE/VSCode/常用插件)
 - [settings](常用工具/IDE/VSCode/settings)
 - [Formatting](常用工具/IDE/VSCode/Formatting)
+- [问题汇总](常用工具/IDE/VSCode/问题汇总)
