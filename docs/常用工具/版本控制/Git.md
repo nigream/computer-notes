@@ -27,6 +27,15 @@ git branch -d xxx
 git branch -D xxx
 ```
 
+### 本地分支相关
+
+```sh
+# 从当前分支新建分支
+git checkout -b xxx
+```
+
+
+
 ### 远程分支相关
 
 ```sh
@@ -84,5 +93,24 @@ ssh-keygen -t rsa -C "xxxx@gmail.com"
 
 ## .gitignore
 
+### 优先级(precedence)
 
+参考：https://git-scm.com/docs/gitignore
+
+
+
+### pattern format
+
+#### 空行
+
+- **空行** 不匹配任何文件，它可用于增强可读性。
+
+#### # 符号
+
+- **#** 用于注释，转义用 `\#` 。
+
+#### / slash
+
+1. 如果 `pattern` 的 **开头** 或 **中间** 有 `/` ( eg: `doc/frotz/` )，则 表明这个  `pattern` 只能匹配 `.gitignore` 所在目录的相对目录；如果 `pattern` 的 **开头** 或 **中间** 没有 `/` ，即 只可能在末尾有 `/` ( eg: `frotz/` ) ，则可以匹配 **任意层级** 的目录。
+2. 如果 `pattern` 的 末尾 有 `/` (不管 **开头** 或 **中间** 有没有 `/` )，则表明 **只能匹配目录** ；如果 `pattern` 的 末尾 没有 `/` (不管 **开头** 或 **中间** 有没有 `/` )，则表明 **既能匹配目录，又能匹配文件** 。
 
