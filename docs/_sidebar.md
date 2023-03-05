@@ -73,6 +73,7 @@
   - [计算机组成原理](计算机基础/计算机组成原理/)
 - <font style="font-weight:bold;font-size:17px;">密码学</font>
   - [非对称加密](密码学/非对称加密/)
+  - [对称加密](密码学/对称加密/)
   - [编码](密码学/编码/)
   
 - <font style="font-weight:bold;font-size:17px;">设计与架构</font>
