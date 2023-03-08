@@ -21,10 +21,7 @@ git rm -r --cached  "*.iml"
 # 展示仓库中的所有文件
 git ls-files
 
-# 删除分支（带警告）
-git branch -d xxx
-# 删除分支（不带警告，强行删除）
-git branch -D xxx
+
 ```
 
 ### 本地分支相关
@@ -32,6 +29,11 @@ git branch -D xxx
 ```sh
 # 从当前分支新建分支
 git checkout -b xxx
+
+# 删除分支（带警告）
+git branch -d xxx
+# 删除分支（不带警告，强行删除）
+git branch -D xxx
 ```
 
 
