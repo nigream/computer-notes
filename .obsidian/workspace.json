@@ -1,0 +1,166 @@
+{
+  "main": {
+    "id": "c87ac0cb9838b4b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "8cafe78ce10afa4d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f09b935dfdd9b95",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/常用工具/建站框架/hexo/hexo入门.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dc88e0971fcaa6fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "be1f08781e26b109",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40a9c669e5253555",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "775ef1ca6b652cd7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "git remote",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a6b84e7c395aa63d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "65b3afde83d297d2",
+    "type": "split",
+    "children": [
+      {
+        "id": "75fe3e981de15ac0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f52b569c4377aa8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/常用工具/建站框架/hexo/hexo入门.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b96074dee32d39cf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/常用工具/建站框架/hexo/hexo入门.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c5a4483c147dd205",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d644aa11dca603d5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/常用工具/建站框架/hexo/hexo入门.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "40a9c669e5253555",
+  "lastOpenFiles": [
+    "docs/常用工具/版本控制/_sidebar.md",
+    "docs/_coverpage.md",
+    "docs/编程开发/Go/README.md",
+    "docs/编程开发/Go/Go基础/Go语法.md",
+    "docs/编程开发/Python/Python基础/Python解释器.md",
+    "docs/编程开发/Python/Python后端/README.md",
+    "编程开发/Python/Python后端.md",
+    "docs/编程开发/Python/_sidebar.md",
+    "docs/编程开发/Python/README.md",
+    "docs/编程开发/Python/Python基础/学习准备.md",
+    "编程开发/Python/Python基础 1.md",
+    "编程开发/Python/Python基础.md",
+    "编程开发/Python",
+    "编程开发"
+  ]
+}
